@@ -3,3 +3,5 @@ The site was created using html/css/JS with simple registration. It also has thr
 
 ! ATTENTION !
 It works correctly only in Firefox
+
+![Alt text](https://i.imgur.com/v40Aach.jpg)
