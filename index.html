@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="register.js"></script>
+</head>
+<body onload="readCookie()">
+
+    <video class="video" loop="loop" autoplay="" muted="">
+        <source src="dust.mp4" type="video/mp4" /> 
+    </video>
+    <div id="full">
+    <div class="main-container">
+        <div class="form-container">
+            <div class="form-body">
+                <h2 class="title">Log in with</h2>
+
+                <div class="social-login">
+                    <ul> 
+                        <li class="google" onclick='fastCookie()'><a href="#" >Google</a></li>
+                        <li class="git" onclick='fastCookie()'><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <div class="_or">or</div>
+
+                <form action="" class="the-form">
+                    <label>Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                    <label>Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password">
+                    <input type="submit" value="Log In" id="Submit" onclick="saveCookie(document.getElementById('email').value, 
+                    document.getElementById('password').value)">
+                </form>
+            </div>
+
+            <footer class="form-footer">
+                <div>
+                    <span>Don't have an account?</span><a href="" class="top" onclick='fastCookie()'> Sign Up</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+</body>
+</html>

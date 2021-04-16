@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../style.css"> 
+	<script src="math.js"></script>
+	<title>Math</title>
+</head>
+<body onload="onLoad()">
+    <section class="about">
+        <video class="video" loop="loop" autoplay="" muted="">
+            <source src="..\dust.mp4" type="video/mp4" /> 
+        </video>
+     
+    <div class="about-title">
+    <header>
+        <center>
+            <h1 >Mathematical functions<h1>        
+            <div class="tasks">
+                <input type="submit" value = "First" onclick="task1()">
+                <input type="submit" value = "Second" onclick="task2()">
+                <input type="submit" value = "Third" onclick="task3()">
+                <input type="submit" value = "Sign out" onclick="removeCookie()">
+            </div>
+        </center>		
+	</header>	
+
+    <div class="main-container">
+    <div class="form-container">
+    <div class="form-body">	
+		<content>
+			<h2 id = "Task1"><center>Triangular</center></h2>
+            <div id="task1" class="the-form">
+                <input type="variable" name="a" id="a" placeholder="Enter A here"><br><br>                
+                <input type="variable" name="b" id="b" placeholder="Enter B here"><br><br>                
+                <input type="variable" name="c" id="c" placeholder="Enter C here"><br>            
+                <input type="submit" value="Сalculate" onclick="Triangular()"><br>                
+                <center><font face="Consolas" size="4px"><p></p></font></center>
+            </div>
+            <center><h2 id = "Task2">Tabulation<br><font face="Consolas" size="4px">h = (b - a) / N</font></h2></center>
+			<div id="task2" class="the-form">
+                
+                <input type="variable" id="N" placeholder="Enter N here"><br><br>
+                <input type="variable" id="Start" placeholder="Enter interval beginning here"><br><br>
+                <input type="variable" id="Finish" placeholder="Enter interval ending here"><br>
+				<input type="submit" value = "Сalculate" onclick="Tabulation()"><br><br>
+				<center><font face="Consolas" size="4px"><p></p></font></center><br>
+
+				<table id="tableSecond" class = "styled-table">
+                    <thead>
+                        <tr>
+                            <th>X</th>
+                            <th>F(x)</th>
+                        </tr>
+                    </thead>
+					<tbody>
+						<tr id="TR" >
+							<td>0.0</td>
+							<td>0.0</td>
+                        </tr>
+					</tbody>
+				</table>
+			</div>
+			<center><h2 id = "Task3">Tabulation<br></h2></center>
+			<div id="task3" class="the-form">
+                <input type="variable" id = "begin"  placeholder="Enter interval beginning here"><br>
+				<input type="variable" id = "end"    placeholder="Enter interval ending here"><br>
+				<input type="variable" id = "deltaX" placeholder="Enter Δx here"><br>
+				<input type="variable" id = "thirdA" placeholder="Enter a here"><br>
+				<input type="variable" id = "thirdB" placeholder="Enter b here"><br>
+				<input type="variable" id = "thirdZ" placeholder="Enter z here"><br>
+				<input type="submit" value = "Сalculate" onclick="System()"><br><br>				
+				
+				<table id="tableThird" class = "styled-table">
+                    <thead>
+                        <tr>
+                            <th>X</th>
+                            <th>F(x)</th>
+                        </tr>
+                    </thead>
+					<tbody>
+						<tr id="TR" >
+							<td>0.0</td>
+							<td>0.0</td>
+                        </tr>
+					</tbody>
+				</table>
+			</div>
+		</content>
+	</div>
+    </div>
+    </div></div> </section>
+</body>
+</html>
